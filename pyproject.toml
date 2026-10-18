@@ -1,0 +1,17 @@
+[project]
+name = "bulk-hic-prediction"
+version = "0.1.0"
+description = "Organized training, testing, and analysis code for bulk Hi-C prediction."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "torch",
+  "matplotlib",
+  "tqdm",
+  "h5py",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["data", "models", "metrics", "training_utils"]
